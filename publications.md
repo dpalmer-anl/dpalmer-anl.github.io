@@ -3,9 +3,6 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-
-# Publications
-
 ## Journal Articles
 
 ### 2025
@@ -36,15 +33,13 @@ Graphene, Fitted to Quantum Monte Carlo Data"
 
 ### 2024
 
-1. **Palmer, D.** "Systematically Improvable Uncertainty Quantification Methods for Bilayer Graphene
-Multi-Scale Models"
+1. **Palmer, D.** "Uncertainty Quantification of Total Energy Tight Binding Models for van der Waals Materials"
    - *Materials Research Society, Fall Meeting*, Boston, Ma
    - Oral presentation
 
 ### 2023
 
-1. **Palmer, D.** "A Quantum Monte Carlo fit Total Energy Tight Binding Model for Twisted Bilayer
-Graphene"
+1. **Palmer, D.** "Exploring Moire Lattice Reconstruction using a Tight Binding Derived Force Model"
    - *Materials Research Society, Fall Meeting*, Boston, Ma
    - Oral presentation
 

@@ -4,6 +4,12 @@ title: Software
 permalink: /software/
 ---
 
+# Software & Open Source Projects
+
+I am committed to open science and reproducible research. Below are the main software packages I have developed and maintain.
+
+---
+
 ## TETB_GRAPHENE
 
 <div class="software-card">
@@ -95,12 +101,14 @@ See the [README](https://github.com/Johnson-Research-Group/TETB_GRAPHENE/blob/ma
 ![Language](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-ee4c2c.svg)
 
-**Repository**: [https://github.com/dpalmer-anl/BLG_model_builder.git]
+**Repository**: [https://github.com/dpalmer-anl/BLG_model_builder](https://github.com/dpalmer-anl/BLG_model_builder)
 
 #### Description
+
 A comprehensive toolkit for building and parameterizing bilayer graphene models using total energy tight binding approaches. This package provides tools for fitting model parameters to DFT/QMC data and includes uncertainty quantification capabilities.
 
 #### Key Features
+
 - **Parameter Optimization**: Advanced fitting algorithms to match ab initio reference data
 - **optional PyTorch Backend**: automatic differentiation, gpu acceleration
 - **Uncertainty Quantification**: Markov Chain Monte Carlo for rigorous uncertainty estimates
@@ -121,6 +129,7 @@ pip install -e .
 
 </div>
 
+---
 
 ## Contributing
 
