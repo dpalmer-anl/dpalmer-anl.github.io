@@ -4,8 +4,6 @@ title: Software
 permalink: /software/
 ---
 
-# Software & Open Source Projects
-
 I am committed to open science and reproducible research. Below are the main software packages I have developed and maintain.
 
 ---
