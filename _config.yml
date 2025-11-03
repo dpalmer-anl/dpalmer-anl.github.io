@@ -1,0 +1,67 @@
+# Site settings
+title: Daniel Palmer
+email: dpalmer3@illinois.edu
+description: >-
+  PhD Student in Computational Materials Science
+  University of Illinois at Urbana-Champaign
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dpalmer-anl.github.io" # the base hostname & protocol for your site
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Author information
+author:
+  name: Daniel Palmer
+  email: dpalmer3@illinois.edu
+  affiliation: University of Illinois at Urbana-Champaign
+  
+# Navigation
+header_pages:
+  - index.md
+  - research.md
+  - software.md
+  - publications.md
+  - cv.md
+
+# Social links
+github_username: dpalmer-anl
+linkedin_username: daniel-palmer-6a8788170
+scholar_userid: your-google-scholar-id
+orcid: 0000-0002-1234-5678
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
