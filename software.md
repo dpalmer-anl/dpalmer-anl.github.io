@@ -119,6 +119,20 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+## AtomBridge
+
+### Extracting crystallographic information for structure generation from STEM literature.
+
+![Language](https://img.shields.io/badge/python-3.10+-blue.svg)
+
+**Repository**: [https://github.com/dpalmer-anl/AtomBridge](https://github.com/dpalmer-anl/AtomBridge)
+
+#### Description
+
+This package was initially developed as part of the LLM-hackathon for Materials Science and Chemistry. This package uses an LLM agent to parse pdfs of STEM journal article, decides what are the relevant structures, and generates code for constructing a .cif file for the relevant structures to be used in simulations. The goal of this project is to make it easier for computational and experimental scientists to verify and compare their work.
+
+Instructions on how to use and run this agent are given in README.md
+
 ## Contributing
 
 I welcome contributions to any of these projects! Please see the individual repositories for contribution guidelines. Feel free to:
@@ -130,7 +144,7 @@ I welcome contributions to any of these projects! Please see the individual repo
 
 ## Dependencies & Acknowledgments
 
-These packages build upon excellent open-source software including:
+These packages build upon open-source software including:
 - [ASE](https://wiki.fysik.dtu.dk/ase/) - Atomic Simulation Environment
 - [NumPy](https://numpy.org/) & [SciPy](https://scipy.org/) - Scientific computing
 - [PyTorch](https://pytorch.org/) - Machine learning and optimization
