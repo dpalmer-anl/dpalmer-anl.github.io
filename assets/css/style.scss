@@ -159,24 +159,37 @@ body {
 // Code blocks
 pre, code {
   font-family: $code-font;
-  background-color: $light-gray;
+  background-color: #f6f8fa;
   border-radius: 4px;
+  color: #24292e;
+  font-weight: 500;
 }
 
 pre {
   padding: 1rem;
   overflow-x: auto;
   border-left: 3px solid $primary-color;
+  background-color: #f6f8fa !important;
+  
+  code {
+    background-color: transparent !important;
+    color: #24292e !important;
+    font-weight: 500;
+  }
 }
 
 code {
   padding: 0.2rem 0.4rem;
   font-size: 0.9em;
+  color: #e83e8c;
+  background-color: #f8f9fa;
+  font-weight: 600;
 }
 
 pre code {
   padding: 0;
   background-color: transparent;
+  color: #24292e;
 }
 
 // Links
