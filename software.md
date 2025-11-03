@@ -10,8 +10,6 @@ I am committed to open science and reproducible research. Below are the main sof
 
 ## TETB_GRAPHENE
 
-<div class="software-card">
-
 ### Total Energy Tight Binding for Graphene Systems
 
 ![Language](https://img.shields.io/badge/python-3.8+-blue.svg)
@@ -86,13 +84,9 @@ bands = calc.get_band_structure(atoms, kpath)
 
 See the [README](https://github.com/Johnson-Research-Group/TETB_GRAPHENE/blob/main/README.md) and `tests/example_usage.py` for more examples.
 
-</div>
-
 ---
 
 ## BLG_model_builder
-
-<div class="software-card">
 
 ### Bilayer Graphene Model Uncertainty Quantification
 
@@ -124,10 +118,6 @@ pip install -r requirements.txt
 # Install the package
 pip install -e .
 ```
-
-</div>
-
----
 
 ## Contributing
 
