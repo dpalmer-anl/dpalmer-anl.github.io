@@ -30,7 +30,7 @@ My work combines tight-binding models with machine learning approaches to enable
 
 - **TETB_GRAPHENE**: Developed a Python package for efficient calculation of forces, energies, and band structures in multi-layer graphene systems
 - **BLG_model_builder**: Created tools for uncertainty quantification of models for bilayer graphene models
-- **GPU Acceleration**: Implemented GPU-accelerated versions of computational codes for large-scale simulations
+- **AtomBridge**: LLM-agent used to construct .cif files from published STEM papers
 
 ## News
 

@@ -4,12 +4,6 @@ title: Software
 permalink: /software/
 ---
 
-# Software & Open Source Projects
-
-I am committed to open science and reproducible research. Below are the main software packages I have developed and maintain.
-
----
-
 ## TETB_GRAPHENE
 
 <div class="software-card">
@@ -22,9 +16,11 @@ I am committed to open science and reproducible research. Below are the main sof
 **Repository**: [https://github.com/Johnson-Research-Group/TETB_GRAPHENE](https://github.com/Johnson-Research-Group/TETB_GRAPHENE)
 
 #### Description
+
 A Python package for calculating forces, energies, and band structures for multi-layer graphene systems using the Total Energy Tight Binding method. This package enables accurate quantum mechanical simulations at scales that were previously only accessible to classical force fields.
 
 #### Key Features
+
 - **Force & Energy Calculations**: Compute atomic forces and total energies for arbitrary graphene configurations
 - **Band Structure**: Calculate electronic band structures including the effects of twist angles and strain
 - **Geometry Optimization**: Relax atomic positions to find minimum energy structures
@@ -83,6 +79,7 @@ bands = calc.get_band_structure(atoms, kpath)
 ```
 
 #### Documentation
+
 See the [README](https://github.com/Johnson-Research-Group/TETB_GRAPHENE/blob/main/README.md) and `tests/example_usage.py` for more examples.
 
 </div>
@@ -141,7 +138,7 @@ These packages build upon excellent open-source software including:
 - [NumPy](https://numpy.org/) & [SciPy](https://scipy.org/) - Scientific computing
 - [PyTorch](https://pytorch.org/) - Machine learning and optimization
 - [LAMMPS](https://lammps.sandia.gov/) - Molecular dynamics
-- [Quantum ESPRESSO](https://www.quantum-espresso.org/) - DFT calculations
+- [EMCEE](https://emcee.readthedocs.io/en/stable/) - Markov Chain Monte Carlo
 
 ---
 
