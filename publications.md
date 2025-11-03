@@ -47,9 +47,7 @@ Graphene, Fitted to Quantum Monte Carlo Data"
 
 ## Citation Metrics
 
-- Google Scholar: [https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=Bq5Z32cAAAAJ]
-- ORCID: [0000-0002-2504-4195]
-- ResearchGate: [Your profile link]
+- [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=Bq5Z32cAAAAJ)
 
 ---
 
