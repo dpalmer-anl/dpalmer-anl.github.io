@@ -4,7 +4,7 @@ title: Software
 permalink: /software/
 ---
 
-I am committed to open science and reproducible research. Below are the main software packages I have developed and maintain.
+Below are the main software packages I have developed and maintain.
 
 ---
 
@@ -97,13 +97,29 @@ See the [README](https://github.com/Johnson-Research-Group/TETB_GRAPHENE/blob/ma
 
 #### Description
 
-A comprehensive toolkit for building and parameterizing bilayer graphene models using total energy tight binding approaches. This package provides tools for fitting model parameters to DFT/QMC data and includes uncertainty quantification capabilities.
+A comprehensive toolkit for building and parameterizing bilayer graphene models. There are implementations for tight binding models, interatomic potentials, and total energy tight binding models. Both physics based and linear descriptor based models are available. This package provides tools for fitting model parameters to DFT/QMC data and includes uncertainty quantification capabilities.
 
-#### Key Features
+## Key Features
 
-- **Parameter Optimization**: Advanced fitting algorithms to match ab initio reference data
-- **optional PyTorch Backend**: automatic differentiation, gpu acceleration
-- **Uncertainty Quantification**: Markov Chain Monte Carlo for rigorous uncertainty estimates
+- **Model Fitting**: functions to fit models to match ab initio reference data
+- **Uncertainty Quantification**: Markov Chain Monte Carlo for uncertainty quantification
+
+### Tight Binding models
+
+- **Moon-Koshino (MK)**
+- **Local Environment Tight Binding (LETB)**
+- **linear descriptor based**
+
+### Interatomic potentials
+
+- **Tersoff**
+- **Kolmgorov-Crespi (KC)**
+- **Dihedral registry dependent potential (DRIP)**
+- **Proper Orthogonal Descriptor potential (POD)**
+
+### Total energy Tight Binding Model
+
+- **linear descriptor based**
 
 #### Installation
 
@@ -132,31 +148,4 @@ pip install -e .
 This package was initially developed as part of the LLM-hackathon for Materials Science and Chemistry. This package uses an LLM agent to parse pdfs of STEM journal article, decides what are the relevant structures, and generates code for constructing a .cif file for the relevant structures to be used in simulations. The goal of this project is to make it easier for computational and experimental scientists to verify and compare their work.
 
 Instructions on how to use and run this agent are given in README.md
-
-## Contributing
-
-I welcome contributions to any of these projects! Please see the individual repositories for contribution guidelines. Feel free to:
-- Report bugs and request features via GitHub issues
-- Submit pull requests with improvements
-- Contact me for collaboration opportunities
-
----
-
-## Dependencies & Acknowledgments
-
-These packages build upon open-source software including:
-- [ASE](https://wiki.fysik.dtu.dk/ase/) - Atomic Simulation Environment
-- [NumPy](https://numpy.org/) & [SciPy](https://scipy.org/) - Scientific computing
-- [PyTorch](https://pytorch.org/) - Machine learning and optimization
-- [LAMMPS](https://lammps.sandia.gov/) - Molecular dynamics
-- [EMCEE](https://emcee.readthedocs.io/en/stable/) - Markov Chain Monte Carlo
-
----
-
-## Support
-
-For questions or support, please:
-1. Check the documentation in each repository
-2. Open an issue on GitHub
-3. Contact me directly at [dpalmer3@illinois.edu](dpalmer3@illinois.edu)
 

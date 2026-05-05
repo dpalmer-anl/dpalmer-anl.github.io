@@ -19,12 +19,13 @@ author:
   email: dpalmer3@illinois.edu
   affiliation: University of Illinois at Urbana-Champaign
   
-# Navigation
+# Navigation (mirrored in _includes/header.html)
 header_pages:
   - index.md
   - research.md
   - software.md
   - publications.md
+  - blog.md
   - cv.md
 
 # Social links
@@ -53,6 +54,12 @@ collections:
 
 # Defaults
 defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:year/:month/:day/:title/
   - scope:
       path: ""
       type: "projects"

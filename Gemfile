@@ -9,3 +9,5 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
 end
 
+
+gem "jekyll", "~> 3.10"

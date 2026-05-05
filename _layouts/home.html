@@ -2,7 +2,23 @@
 layout: default
 ---
 
-<div class="home">
-  {{ content }}
+<div class="home home-layout">
+  <aside class="home-sidebar" aria-label="Profile photos">
+    <img
+      class="home-headshot"
+      src="{{ '/assets/images/headshot.jpg' | relative_url }}"
+      alt="{{ site.author.name | default: site.title | escape }}"
+      decoding="async"
+    />
+    <img
+      class="home-block-i"
+      src="{{ '/assets/images/block-i-orange-blue-background.png' | relative_url }}"
+      alt="University of Illinois at Urbana-Champaign Block I logo"
+      decoding="async"
+    />
+  </aside>
+  <div class="home-main">
+    {{ content }}
+  </div>
 </div>
 

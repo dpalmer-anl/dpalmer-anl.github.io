@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </p>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+    <p class="post-subtitle">{{ page.subtitle | escape }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <p><a class="post-back" href="{{ "/blog/" | relative_url }}">&larr; Back to blog</a></p>
+    <nav class="post-nav" aria-label="Adjacent posts">
+      {% if page.previous %}
+      <a class="post-nav-prev" href="{{ page.previous.url | relative_url }}" rel="prev">&larr; {{ page.previous.title | escape }}</a>
+      {% endif %}
+      {% if page.next %}
+      <a class="post-nav-next" href="{{ page.next.url | relative_url }}" rel="next">{{ page.next.title | escape }} &rarr;</a>
+      {% endif %}
+    </nav>
+  </footer>
+</article>

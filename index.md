@@ -3,40 +3,14 @@ layout: home
 title: Home
 ---
 
-# Daniel Palmer
+I am a PhD student in computational materials science at the University of Illinois at Urbana-Champaign. My research focuses on developing computational models for studying electronic and structural properties of two-dimensional materials, particularly in twised bilayer graphene systems. 
 
-<div class="profile-section">
-  <div class="profile-content">
-    <p class="lead">PhD Student in Computational Materials Science</p>
-    <p><strong>University of Illinois at Urbana-Champaign</strong></p>
-  </div>
-</div>
+I work on creating tight binding models, total energy tight binding models and interatomic potentials using various techniques (including neural networks). I have also focused on uncertainty quantification and propagation for these models, using techniques like Markov Chain Monte Carlo.
 
-## About Me
+As part of my research, I have developed and contributed to several software projects. The Software tab shows several tutorials of how to use some the packages I have worked on.
 
-I am a PhD student in computational materials science at the University of Illinois at Urbana-Champaign. My research focuses on developing and applying advanced computational methods for studying two-dimensional materials, particularly graphene-based systems.
+My blog posts discuss various topics specific and adjacent to my research in a more informal way. I tend to understand problems by writing out the problem mathematically, and seeing what pops out. I try to include some intuitive visualizations as well. See the publications section for a list of my publications to journals and conference proceedings. 
 
-My work combines tight-binding models with machine learning approaches to enable accurate and efficient simulations of complex material systems at scales previously inaccessible to traditional *ab initio* methods.
-
-## Research Interests
-
-- **Tight-Binding Methods**: Development of Total Energy Tight Binding (TETB) models for accurate prediction of electronic structure and total energies
-- **Two-Dimensional Materials**: Computational study of graphene, bilayer graphene, and twisted bilayer graphene systems
-- **Machine Learning for Materials**: Integration of machine learning techniques with physics-based models
-- **Multi-scale Modeling**: Bridging quantum mechanical accuracy with classical simulation efficiency
-- **Electronic Structure Theory**: Band structure calculations and electronic properties of layered materials
-
-## Software Packages
-
-- **TETB_GRAPHENE**: Developed a Python package for efficient calculation of forces, energies, and band structures in multi-layer graphene systems
-- **BLG_model_builder**: Created tools for uncertainty quantification of models for bilayer graphene models
-- **AtomBridge**: LLM-agent used to construct .cif files from published STEM papers
-
-## News
-
-*Coming soon: Updates on recent publications and presentations*
-
----
 
 <div class="contact-section">
   <h3>Contact</h3>
