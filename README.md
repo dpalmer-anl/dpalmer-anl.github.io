@@ -4,6 +4,8 @@ A professional Jekyll-based website for showcasing research in computational mat
 
 ## Overview
 
+See the webpage here: https://dpalmer-anl.github.io/
+
 This website is built using Jekyll and is designed to be hosted on GitHub Pages. It features:
 
 - **Home Page**: Introduction and research overview
