@@ -33,10 +33,14 @@ cd dpalmer-anl.github.io
 bundle install
 ```
 
-3. Run the Jekyll server locally:
+3. Run the Jekyll server locally **from the repository root** (the folder that contains `_config.yml` and `index.md`—not from `assets/` or other subfolders):
 ```bash
 bundle exec jekyll serve
 ```
+
+On Windows you can double-click **`serve.cmd`** in the repo root instead; it always `cd`s to the correct directory first.
+
+If you see a **directory listing** (only a couple of files like `rotating_b_spin_field_lines.*`) instead of your homepage, your terminal’s current directory is wrong—`cd` to the project root and run `jekyll serve` again.
 
 4. Open your browser and navigate to `http://localhost:4000`
 

@@ -347,6 +347,40 @@ li {
   }
 }
 
+// Blog post: figures (half content width, centered)
+.post-animation-embed {
+  width: 50%;
+  max-width: 100%;
+  margin: 1.25rem auto 1.5rem;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    background: rgb(5, 5, 12);
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+    color: $text-muted;
+    line-height: 1.45;
+    margin-top: 0.6rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .post-animation-embed {
+    width: 100%;
+  }
+}
+
 // CV — embedded PDF
 .cv-pdf {
   width: 100%;
@@ -508,8 +542,13 @@ table {
 
 .page-content mjx-container,
 .post-body mjx-container {
-  overflow-x: auto;
   max-width: 100%;
+}
+
+/* Prefer wrapping display math to avoid horizontal scrolling */
+mjx-container[display="true"] {
+  overflow-x: visible;
+  overflow-y: visible;
 }
 
 .post-footer {
