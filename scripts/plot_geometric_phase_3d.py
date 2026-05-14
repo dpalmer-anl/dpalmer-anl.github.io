@@ -59,6 +59,25 @@ def main():
     z_c = np.array([phi_geom_from_alpha(a) for a in alpha_curve])
     ax.plot(x_c, y_c, z_c, color="k", lw=linewidth, label=r"$\phi_{\mathrm{geom}}(t)$")
 
+    # Point labels: start t=0, end t=2*pi/Omega (= one period T)
+    pt_fs = 9
+    ax.text(R+.1, 0.1, -0.25, r"$t=0$", fontsize=pt_fs, color="k", ha="center", va="bottom", zorder=8)
+    alpha_last = alpha_curve[-1]
+    x_last = R * np.cos(alpha_last)
+    y_last = R * np.sin(alpha_last)
+    z_last = phi_geom_from_alpha(alpha_last)
+    ax.text(
+        x_last + 0.1,
+        y_last + 0.1,
+        z_last - 0.2,
+        r"$t=2\pi/\Omega$",
+        fontsize=pt_fs,
+        color="k",
+        ha="right",
+        va="top",
+        zorder=8,
+    )
+
     # --- reference circle in xy plane (z=0): time parameter ---
     alpha_ring = np.linspace(0, 2 * np.pi, 200, endpoint=True)
     ax.plot(R * np.cos(alpha_ring), R * np.sin(alpha_ring), np.zeros_like(alpha_ring), color="0.45", lw=linewidth * 0.8, ls="--")
