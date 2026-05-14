@@ -170,6 +170,41 @@ body {
   }
 }
 
+// Research page: three figures in one row (research.md)
+.research-figure-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.65rem;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 1.1rem 0 1.35rem;
+
+  figure {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+  }
+
+  figcaption {
+    font-size: 0.82rem;
+    color: $text-muted;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+}
+
 // Research and project cards
 .research-project, .software-card {
   background-color: white;

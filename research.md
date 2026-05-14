@@ -8,35 +8,49 @@ My research focuses on developing efficient and accurate computational methods f
 
 ---
 
-## Total Energy Tight Binding for Bilayer Graphene
+## Electronic and structural properties of twisted Bilayer Graphene
 
-### Overview
+I have developed a semi-empirical Total Energy Tight Binding (TETB) parameterization for bilayer graphene. This approach combines electronic structure information into the total energy calculation. These types of models allow us to understand how the band structure might alter the relaxed structure and tBLG's elastic properties and vice versa.
 
-I have developed a semi-empirical Total Energy Tight Binding (TETB) parameterization for bilayer graphene that is transferable to arbitrary interlayer separation, local disregistry, and twist angle. The approach combines electronic structure information into the total energy calculation and allows us to recreate the potential energy surface fitted to Quantum Monte Carlo (QMC) and DFT total energy data. This enables large-scale calculations (tens of thousands of atoms) with QMC-accurate total energies and built-in electronic structure dependence.
-
-### Key Results
-
-- **Magic angle dependent on relaxation model**: The magic angle for twisted Bilayer Graphene changes depending on which model is used to relax the system. Biaxial strain does not change the magic angle for systems relaxed with TETB.
-- **Realistic mechanics**: TETB Predicts negative out-of-plane Poisson ratio comparable to DFT, capturing strain effects on magic angles that classical potentials miss
-- **Large-Scale Capability**: Enables relaxation of twisted bilayer graphene structures with as many as 16,876 atoms (θ = 0.88°), orders of magnitude faster than DFT
+<div class="research-figure-row">
+<figure>
+  <img src="{{ '/assets/images/bilayer_graphene_poisson_ratio_pz.png' | relative_url }}" alt="Schematic bilayer graphene Poisson response and pz-related physics." loading="lazy" decoding="async" />
+  <figcaption>Li, Xiaowen, et al., &ldquo;Tunable negative Poisson&rsquo;s ratio in van der Waals superlattice,&rdquo; <em>Research</em> (2021).</figcaption>
+</figure>
+<figure>
+  <img src="{{ '/assets/images/poisson_ratio_nanoribbon.jpeg' | relative_url }}" alt="Negative Poisson's ratio in a single-layer graphene nanoribbon." loading="lazy" decoding="async" />
+  <figcaption>Jiang, Jin-Wu, and Harold S. Park, &ldquo;Negative Poisson&rsquo;s ratio in single-layer graphene ribbons,&rdquo; <em>Nano Letters</em> 16.4 (2016): 2657&ndash;2662.</figcaption>
+</figure>
+<figure>
+  <img src="{{ '/assets/images/tblg_corrugation.png' | relative_url }}" alt="Corrugation in twisted bilayer graphene." loading="lazy" decoding="async" />
+</figure>
+</div>
 
 ---
 
-## Bilayer Graphene Model Uncertainty Quantification
+## Uncertainty Quantification for Bilayer Graphene Models
 
+Calculated properties for bilayer graphene and tBLG are extremely sensitive to the models used and the underlying training data. I am quantifying uncertainties in these models and seeing how these uncertainties propagate to different quantities of interest. Particularly I am investigating the uncertainty in tBLG structures and their magic angle properties.
 
-### Overview
-
-I have used Markov Chain Monte Carlo to quantify and propagate uncertainties for total energy and tight binding models for bilayer graphene. This works aims to show how much uncertainty in our calculations we can expect. For example, how much uncertainty is there in the band width of twisted Bilayer Graphene given a specific model and dataset.
-
+<div class="research-figure-row">
+<figure>
+  <img src="{{ '/assets/images/mcmc_sampling_cost_function.png' | relative_url }}" alt="Markov-chain Monte Carlo samples exploring a cost function landscape." loading="lazy" decoding="async" />
+  <figcaption>Markov-chain Monte Carlo samples of a cost function, image courtesy of <a href="https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html">https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html</a>.</figcaption>
+</figure>
+<figure>
+  <img src="{{ '/assets/images/band_structure_TETB_popov_mcmc_t_0.99.png' | relative_url }}" alt="Uncertainty in magic-angle twisted bilayer graphene band structure from MCMC." loading="lazy" decoding="async" />
+  <figcaption>Uncertainty in magic angle band structure.</figcaption>
+</figure>
+</div>
 
 ## Computational Methods & Tools
 
 My research involves development and application of various computational methods:
 
-- **Electronic Structure**: Tight-binding, DFT (Quantum ESPRESSO), and hybrid approaches
+- **Electronic Structure**: Tight-binding models, DFT (Quantum ESPRESSO), and continuum models
 - **Molecular Dynamics**: LAMMPS and ASE integration for large-scale atomistic simulations
-- **Machine Learning**: Gaussian Process and Neural Networks
+- **Machine Learning**: Gaussian Processes and Neural Networks
+- **Uncertainty Quantification**: Markov Chain Monte Carlo, Bootstrapping, Gaussian Processes
 - **High-Performance Computing**: Parallel algorithms and GPU acceleration
 - **Scientific software skills**: NumPy, SciPy, PyTorch, JAX, ASE, c++
 
