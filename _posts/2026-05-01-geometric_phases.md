@@ -52,7 +52,7 @@ $$\phi_{geom} = \int_0^t \mathbf{A}(t') dt'$$
 
 ## Spin 1/2 particle in a magnetic field
 
-Let's use a concrete example to understand the Berry phase. Consider a spin 1/2 particle in a rotating magnetic field. First, let's assume the $\mathbf{B}$ field rotates around $\hat{z}$ with frequency $\Omega$, magnitude $B_{0}$, and azimuthal angle $\theta$. We can write the time dependent Hamiltonian of the system as,
+Let's use a concrete example to understand the Berry phase. Consider a spin 1/2 particle in a rotating magnetic field. First, let's assume the $\mathbf{B}$ field rotates around $\hat{z}$ with frequency $\Omega$, magnitude $B_{0}$, and polar angle $\theta$. We can write the time dependent Hamiltonian of the system as,
 
 $$H(t) = -\boldsymbol{\sigma}\mathbf{B}(t)$$
 
